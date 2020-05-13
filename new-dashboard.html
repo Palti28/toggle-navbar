@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description"
+		content="DOKU UI Framework to comply developers need about standardized UI Components for the IT's products">
+
+	<title>UI/UX Team - DOKU UI Framework</title>
+
+	<!-- Favicon -->
+	<!-- <link rel="shortcut icon" type="image/png" href="../../img/favicon.png" /> -->
+
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="../../../dist/css/bootstprap.css"> -->
+	<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+	<!-- Custom Styling -->
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./newNav.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script type="text/javascript"> 
+	</script>
+</head>
+
+<body id="dk_body" class="header-fixed aside-enabled aside-fixed ">
+	<div class="d-flex flex-column flex-root">
+		<div class="d-flex flex-row flex-column-fluid page">
+			<div id="dk_aside" class="aside aside-left aside-fixed  d-flex flex-column flex-row-auto">
+				<div id="dk_brand" class="brand flex-column-auto">
+					<a href="" class="brand-logo">
+						<img src="../../img/doku-logo.png" alt="">
+						<div class="brand-text">DOKU Dashboard</div>
+					</a>
+					<div id="dk_aside_toggle" class="brand-toggle btn btn-sm px-0">
+						<i id="toggle-aside" class="fas fa-sliders-h"></i>
+					</div>
+				</div>
+				<div id="dk_aside_menu_wrapper" class="aside-menu-wrapper flex-column-fluid">
+					<div id="dk_aside_menu" class="aside-menu my-3 scroll ps ps--active-y">
+
+						<!-- menu-nav == start -->
+						<ul class="menu-nav">
+							<!-- <li class="menu-item px-4 py-2">
+								<button type="button" class="btn btn-block btn-primary">Active your bisuness</button>
+							</li> -->
+
+							<li class="menu-item menu-item-active" aria-haspopup="true">
+								<a href="" class="menu-link">
+									<span class="menu-icon">
+										<i class="fas fa-chess-rook"></i>
+									</span>
+									<span class="menu-text">
+										Dashboard
+									</span>
+								</a>
+							</li>
+
+							<li class="menu-section">
+								<span class="menu-text">Foundation</span>
+								<i class="fas fa-ellipsis-h icon-more"></i>
+							</li>
+
+
+							<li class="menu-item menu-item-submenu menu-item-open">
+								<a class="menu-link menu-toggle collapsed" data-toggle="collapse" href="#collapseExample" role="button"
+									aria-expanded="false" aria-controls="collapseExample">
+									<span class="menu-icon">
+										<i class="fas fa-chess-rook"></i>
+									</span>
+									<span class="menu-text">
+										Dashboard
+									</span>
+									<span class="menu-arrow">
+										<i class="fa menu-arrow"></i>
+									</span>
+								</a>
+								<!-- sub-menu -->
+								<div class="collapse menu-submenu" id="collapseExample" data-parent="#dk_aside_menu">
+									<ul class="menu-subnav">
+										<li class="menu-item menu-item-submenu">
+											<a href="#" class=" submenu-link">
+												<span class="menu-bullet">
+													<i class="far fa-circle"></i>
+												</span>
+												<span class="menu-text">
+													sub menu dashboard
+												</span>
+
+											</a>
+											<a href="#" class=" submenu-link">
+												<span class="menu-bullet">
+													<i class="far fa-circle"></i>
+												</span>
+												<span class="menu-text">
+													sub menu dashboard 2
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+
+							<!-- menu component == start ==== -->
+							<li class="menu-item menu-item-submenu menu-item-open">
+								<a class="menu-link menu-toggle collapsed" data-toggle="collapse" href="#collapseExample2" role="button"
+									aria-expanded="false" aria-controls="collapseExample2">
+									<span class="menu-icon">
+										<i class="fas fa-chess-rook"></i>
+									</span>
+									<span class="menu-text">
+										Components
+									</span>
+									<span class="menu-arrow">
+										<i class="fa menu-arrow"></i>
+									</span>
+								</a>
+								<!-- sub-menu -->
+								<div class="collapse menu-submenu" id="collapseExample2" data-parent="#dk_aside_menu">
+									<ul class="menu-subnav">
+										<li class="menu-item menu-item-submenu">
+											<a href="#" class=" submenu-link">
+												<span class="menu-bullet">
+													<i class="far fa-circle"></i>
+												</span>
+												<span class="menu-text">
+													sub menu dashboard
+												</span>
+
+											</a>
+											<a href="#" class=" submenu-link">
+												<span class="menu-bullet">
+													<i class="far fa-circle"></i>
+												</span>
+												<span class="menu-text">
+													sub menu dashboard 2
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<!-- menu component == end ==== -->
+
+							<li class="menu-section">
+								<span class="menu-text">Generals</span>
+								<i class="fas fa-ellipsis-h icon-more"></i>
+							</li>
+
+							<!-- menu examplepage == start ==== -->
+							<li class="menu-item menu-item-submenu menu-item-open">
+								<a class="menu-link menu-toggle collapsed" data-toggle="collapse" href="#collapseExample3" role="button"
+									aria-expanded="false" aria-controls="collapseExample3">
+									<span class="menu-icon">
+										<i class="fas fa-chess-rook"></i>
+									</span>
+									<span class="menu-text">
+										Example Page
+									</span>
+									<span class="menu-arrow">
+										<i class="fa menu-arrow"></i>
+									</span>
+								</a>
+								<!-- sub-menu -->
+								<div class="collapse menu-submenu" id="collapseExample3" data-parent="#dk_aside_menu">
+									<ul class="menu-subnav">
+										<li class="menu-item menu-item-submenu">
+											<a href="#" class=" submenu-link">
+												<span class="menu-bullet">
+													<i class="far fa-circle"></i>
+												</span>
+												<span class="menu-text">
+													Login
+												</span>
+
+											</a>
+											<a href="#" class=" submenu-link">
+												<span class="menu-bullet">
+													<i class="far fa-circle"></i>
+												</span>
+												<span class="menu-text">
+													Bank Logo
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<!-- menu examplepage == start ==== -->
+						</ul>
+						<!-- menu nav == end -->
+					</div>
+				</div>
+			</div>
+
+			<!-- conten wrapper -->
+			<div id="dk_wrapper" class="d-flex flex-column flex-row-fluid wrapper">
+
+				<!-- header == start -->
+				<div id="dk_header" class="header  header-fixed ">
+					<div class="container-fluid  d-flex align-items-stretch justify-content-between">
+						<div class="topbar ">
+							<button class="btn btn-default btn-icon borderless" onclick="toggleNavbarMobile()">
+								<i class="fas fa-sliders-h"></i>
+							</button>
+						</div>
+						<!-- topbar == start -->
+						<div class="topbar">
+							<div class="btn-group mx-3 show">
+								<!-- dropdown-notification == start -->
+								<button class="btn btn-default btn-icon borderless dropdown-toggle dropdown-icon"
+									id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									<i class="far fa-bell"></i>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right dropdown-notification" x-placement="bottom-end"
+									style="position: absolute; transform: translate3d(-337px, 40px, 0px); top: 0px; left: 0px; will-change: transform;">
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="far fa-bell text-success	"></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													6 minutes ago
+												</div>
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="fas fa-check text-success "></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													6 minutes ago
+												</div>
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="fas fa-check text-success "></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													6 minutes ago
+												</div>
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="fas fa-check text-success "></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													6 minutes ago
+												</div>
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">
+										<div class="notification-content">
+											<div class="icon">
+												<i class="fas fa-check text-success "></i>
+											</div>
+											<div class="content">
+												<div class="notification-detail">Lorem ipsum dolor sit amet consectetur adipisicing
+													elit. In totam explicabo</div>
+												<div class="notification-time">
+													6 minutes ago
+												</div>
+											</div>
+										</div>
+									</a>
+									<a class="dropdown-item" href="#">Show all notifications</a>
+								</div>
+								<!-- dropdown-notification == end -->
+							</div>
+							<!-- dropdown-user == start -->
+							<div class="dropdown-user d-inline-block">
+								<div class="btn-group">
+									<a href="" class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<img class="img-responsive img-rounded" src="../../img/user.jpg" alt="User picture">
+									</a>
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								</div>
+							</div>
+							<!-- dropdown-user == end -->
+						</div>
+						<!-- topbar == end -->
+					</div>
+				</div>
+				<!-- header == end -->
+
+				<!-- main content == start -->
+				<div id="dk_content" class="content d-flex flex-column flex-column-fluid">
+					<div class="main-content d-flex flex-column-fluid">
+						<div class="container">
+							<!-- entry-content == start -->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12 stretch-card grid-margin">
+											<div class="card">
+												<div class="card-body">
+													<div class="clearfix">
+														<h4 class="card-title float-left">Collapse</h4>
+														<p class="card-description">
+															Click the buttons below to show and hide another element via class changes:
+															<br> <code>.collapse </code>hides content
+															<br> <code>.collapsing </code> is applied during transitions
+															<br> <code>.collapse.show </code> shows content
+															<br> You can use a link with the href attribute, or a button with the data-target
+															attribute. In
+															both
+															cases, the data-toggle="collapse" is required.
+														</p>
+													</div>
+													<div class="component-container">
+														<p>
+															<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+																aria-expanded="false" aria-controls="collapseExample">
+																Link with href
+															</a>
+															<button class="btn btn-primary" type="button" data-toggle="collapse"
+																data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+																Button with data-target
+															</button>
+														</p>
+														<div class="collapse" id="collapseExample">
+															<div class="card card-body">
+																Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+																squid.
+																Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+																proident.
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-12 stretch-card grid-margin">
+											<div class="card">
+												<div class="card-body">
+													<div class="clearfix">
+														<h4 class="card-title float-left">Collapse as Card</h4>
+														<p class="card-description">
+															Using the card component, you can extend the default collapse behavior to create an
+															accordion.
+															<br> To properly achieve the <code>.accordion-card</code> and then <code>.accordion</code>
+															style.
+															<br> To disable an accordion, use class <code>.disabled </code>in card elemment
+														</p>
+													</div>
+													<div class="component-container">
+														<div class="accordion-card">
+															<div class="accordion" id="accordionExample">
+																<div class="card disabled">
+																	<div data-toggle="collapse" href="#collapseOne" class="collapsed accordion-child"
+																		role="button" aria-expanded="false" aria-controls="collapseOne">
+																		<div class="card-header d-flex" id="headingOne">
+																			<div class="icon-left">
+																				<i class="fa fa-money-bill"></i>
+																			</div>
+																			<button class="btn " type="button">
+																				Transfer Virtual Account
+																			</button>
+																			<div class="icon-right ml-auto">
+																				<i class="fa "></i>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+																		data-parent="#accordionExample">
+																		<div class="accordion-content">
+																			<ul>
+																				<li>Bank Mandiri</li>
+																				<li>Bank Mandiri Syariah</li>
+																				<li>Bank Permata</li>
+																				<li>Bank BNI</li>
+																				<li>Other Banks</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card">
+																	<div data-toggle="collapse" href="#collapseTwo" class="collapsed accordion-child"
+																		role="button" aria-expanded="false" aria-controls="collapseTwo">
+																		<div class="card-header d-flex" id="headingTwo">
+																			<div class="icon-left">
+																				<i class="fa fa-credit-card"></i>
+																			</div>
+																			<button class="btn " type="button">
+																				Credit Card
+																			</button>
+																			<div class="icon-right ml-auto">
+																				<i class="fa "></i>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="collapseTwo" class="collapse" aria-labelledby="collapseTwo"
+																		data-parent="#accordionExample">
+																		<div class="accordion-content">
+																			<ul>
+																				<li>Bank Mandiri</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div data-toggle="collapse" href="#collapseThree" role="button"
+																		class="collapsed accordion-child" aria-expanded="false"
+																		aria-controls="collapseThree">
+																		<div class="card-header d-flex" id="headingThree">
+																			<div class="icon-left">
+																				<i class="fa fa-university"></i>
+																			</div>
+																			<button class="btn " type="button">
+																				Internet Banking
+																			</button>
+																			<div class="icon-right ml-auto">
+																				<i class="fa "></i>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="collapseThree" class="collapse" aria-labelledby="collapseThree"
+																		data-parent="#accordionExample">
+																		<div class="accordion-content">
+																			<ul>
+																				<li>Bank Mandiri</li>
+																				<li>Bank Mandiri Syariah</li>
+																				<li>Bank Permata</li>
+																				<li>Bank BNI</li>
+																				<li>Other Banks</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+
+
+														<p class="card-description mt-5 pb-0">
+															To get each accordion have margin, use class <code>.accordion-card-margin</code> after
+															<code>
+																accordion-card</code> class.
+														</p>
+														<div class="accordion-card accordion-card-margin">
+															<div class="accordion" id="accordionExample">
+																<div class="card">
+																	<div data-toggle="collapse" href="#collapseFour" class="collapsed accordion-child"
+																		role="button" aria-expanded="false" aria-controls="collapseFour">
+																		<div class="card-header d-flex" id="headingFour">
+																			<button class="btn " type="button">
+																				Transfer Virtual Account
+																			</button>
+																			<div class="icon-right ml-auto">
+																				<i class="fa "></i>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="collapseFour" class="collapse" aria-labelledby="headingOne"
+																		data-parent="#accordionExample">
+																		<div class="accordion-content">
+																			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+																				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+																				nostrud
+																				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+																				irure
+																				dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+																				pariatur.
+																				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+																				deserunt
+																				mollit anim id est laborum.</p>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="card">
+																	<div data-toggle="collapse" href="#collapseFive" class="collapsed accordion-child"
+																		role="button" aria-expanded="false" aria-controls="collapseFive">
+																		<div class="card-header d-flex" id="headingFive">
+																			<button class="btn " type="button">
+																				Credit Card
+																			</button>
+																			<div class="icon-right ml-auto">
+																				<i class="fa "></i>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="collapseFive" class="collapse" aria-labelledby="collapseFive"
+																		data-parent="#accordionExample">
+																		<div class="accordion-content">
+																			<ul>
+																				<li>Bank Mandiri</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div data-toggle="collapse" href="#collapseSix" role="button"
+																		class="collapsed accordion-child" aria-expanded="false" aria-controls="collapseSix">
+																		<div class="card-header d-flex" id="headingSix">
+																			<button class="btn " type="button">
+																				Internet Banking
+																			</button>
+																			<div class="icon-right ml-auto">
+																				<i class="fa "></i>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="collapseSix" class="collapse" aria-labelledby="collapseSix"
+																		data-parent="#accordionExample">
+																		<div class="accordion-content">
+																			<ul>
+																				<li>Bank Mandiri</li>
+																				<li>Bank Mandiri Syariah</li>
+																				<li>Bank Permata</li>
+																				<li>Bank BNI</li>
+																				<li>Other Banks</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- entry-content == end -->
+						</div>
+					</div>
+				</div>
+				<!-- main content == end -->
+			</div>
+		</div>
+	</div>
+
+	<script src="../../js/jquery-3.3.1.min.js"></script>
+
+	<!-- Popper and Bootstrap JS -->
+	<script src="../../js/popper.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="./newDashboard.js"></script>
+
+
+</body>
+
+</html>
